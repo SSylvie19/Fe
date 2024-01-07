@@ -1,3 +1,3 @@
 export const environment = {
-  apiBaseUrl: 'https://sylvie.somee.com/api',
+  apiBaseUrl: 'https://www.sylvie.somee.com/api',
 };
