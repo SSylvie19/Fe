@@ -1,0 +1,49 @@
+<table mat-table [dataSource]="weatherData" class="mat-elevation-z8">
+  <!--- Note that these columns can be defined in any order.
+        The actual rendered columns are set as a property on the row definition" -->
+
+  <!-- Position Column -->
+  <ng-container matColumnDef="rainDrop">
+    <th mat-header-cell *matHeaderCellDef>rainDrop</th>
+    <td mat-cell *matCellDef="let element">{{ element.rainDrop }}</td>
+  </ng-container>
+
+  <!-- Name Column -->
+  <ng-container matColumnDef="waterLevel">
+    <th mat-header-cell *matHeaderCellDef>waterLevel</th>
+    <td mat-cell *matCellDef="let element">{{ element.waterLevel }}</td>
+  </ng-container>
+
+  <!-- Weight Column -->
+  <ng-container matColumnDef="temperature">
+    <th mat-header-cell *matHeaderCellDef>temperature</th>
+    <td mat-cell *matCellDef="let element">{{ element.temperature }}</td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="airHumidity">
+    <th mat-header-cell *matHeaderCellDef>airHumidity</th>
+    <td mat-cell *matCellDef="let element">{{ element.airHumidity }}%</td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="soilMoisture">
+    <th mat-header-cell *matHeaderCellDef>soilMoisture</th>
+    <td mat-cell *matCellDef="let element">{{ element.soilMoisture }}%</td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="lightIntensity">
+    <th mat-header-cell *matHeaderCellDef>lightIntensity</th>
+    <td mat-cell *matCellDef="let element">{{ element.lightIntensity }}</td>
+  </ng-container>
+
+  <!-- Symbol Column -->
+  <ng-container matColumnDef="time">
+    <th mat-header-cell *matHeaderCellDef>time</th>
+    <td mat-cell *matCellDef="let element">{{ element.time }}</td>
+  </ng-container>
+
+  <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+  <tr mat-row *matRowDef="let row; columns: displayedColumns"></tr>
+</table>

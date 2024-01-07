@@ -1,0 +1,15 @@
+.card {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.content{
+  font-size: xx-large;
+}
+button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  left: 25%;
+}
