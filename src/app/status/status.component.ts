@@ -22,7 +22,7 @@ export class StatusComponent implements OnInit {
     });
   }
   sendDataToApi(): void {
-    this.deviceService.sendData(this.deviceData).subscribe(
+    this.deviceService.getDeviceInfo().subscribe(
       (response) => {
         console.log('Data sent successfully:', response);
         // You can handle the response here if needed
